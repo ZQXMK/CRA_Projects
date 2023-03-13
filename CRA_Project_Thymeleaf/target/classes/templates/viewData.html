@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>View Data</title>
+	
+	<style>
+		table {
+		  font-family: arial, sans-serif;
+		  border-collapse: collapse;
+		  width: 100%;
+		}
+		
+		td, th {
+		  border: 1px solid #dddddd;
+		  text-align: left;
+		  padding: 8px;
+		}
+		
+		tr:nth-child(even) {
+		  background-color: #dddddd;
+		}
+		
+		
+		tr:nth-child(odd) {
+		  background-color: #ffffff;
+		}
+	</style>	
+	
+</head>
+<body>
+
+
+	<table>
+		<thead>
+			<tr>
+				<th>Sin Number</th>
+				<th>Name</th>
+				<th>Phone Number</th>
+				<th>Address</th>
+				<th>Is Active</th>
+			</tr>
+		</thead>
+
+		<tbody>
+
+	        <tr th:each="records : ${records}">
+	            <td th:text="${records.sinNumber}">Sin Number</td>
+	            <td th:text="${records.name}">Name</td>
+	            <td th:text="${records.phoneNumber}">Phone Number</td>
+	            <td th:text="${records.address}">Address</td>
+	            <td th:text="${records.isActive}">Is Active</td>
+	        </tr>
+	    </tbody>
+    </table>	
+	
+
+</body>
+</html>

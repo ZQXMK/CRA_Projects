@@ -1,0 +1,36 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CRA Project</title>
+    <link th:href="@{/CSS/Style.css}" rel="stylesheet" />
+</head>
+
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+  <img th:src="@{images/ca-flag.jpg}"  style="width:100px;height:50px;" />
+  </div>
+  <div class="middle">
+    <h1>Welcome to Canada Revenue Agency </h1>
+  </div>
+  <div class="bottomleft">
+    <p>Created By Zarif Hasan</p>
+  </div>
+
+  <div class="buttonPosition">
+  	  <form action="/myforms" method="GET">  
+		  <button type = "submit" class="button button1" style = "background-color: #4CAF50;">Create a Form</button>
+	  </form>
+	  
+  	  <form action="/viewData" method="GET">  
+		  <button type = "submit" class="button button2" style = "background-color: #008CBA;">View Data</button>
+	  </form>
+  </div>
+
+</div>
+
+
+
+</body>
+</html>

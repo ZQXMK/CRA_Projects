@@ -1,0 +1,50 @@
+<html lang="en">    
+
+<head>
+	<meta charset="UTF-8">
+	<title>CRA Project</title>
+	<link th:href="@{/CSS/Style.css}" rel="stylesheet" />
+</head>
+
+<body>    
+	<form action="formSubResult" method="GET">    
+		<table>    
+			<tr>
+				<div class="font">
+					<td><label>SIN Number</label></td>    
+					<td><input type="text" name="sinNumber" value="1234567890"></input></td>    
+				</div>
+			</tr>    
+			<tr>    
+				<td><label>Name</label></td>    
+				<td><input type="text" name="Name" value="Zarif Hasan"></input></td>    
+			</tr>    
+			
+			<tr>    
+				<td><label>Phone Number</label></td>    
+				<td><input type="text" name="PhoneNumber" value= "6136207059"></input></td>    
+			</tr>  
+			<tr>    
+				<td><label>Address</label></td>    
+				<td><input type="text" name="Address" value= "613 Gazebo Street"></input></td>    
+			</tr>
+			<tr>
+				<td>
+				  <label>Is Active</label>
+				</td>
+				<td>
+				  <input type="radio" name="IsActive" value="1" checked>
+				  <label>Yes</label><br>
+				
+				  <input type="radio" name="IsActive" value="0">
+				  <label>No</label><br>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="Submit"></input></td>   
+			</tr>
+		</table>    
+	</form>    
+</body>    
+</html>  
+
